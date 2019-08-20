@@ -1,4 +1,4 @@
 # urban_outfitters
 
-<img src='./urban.png' width=40/>
-<img src='./urban1.png' width=70/>
+<img src='./urban.png'/>
+<img src='./urban1.png'/>
