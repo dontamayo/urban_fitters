@@ -1,0 +1,13 @@
+{
+    "name": "urban fitters",
+    "version": "1.0.0",
+    "description": "this is my first extension",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions":[
+        "bookmarks"
+    ]
+}
