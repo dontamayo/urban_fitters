@@ -1,5 +1,5 @@
 {
-    "name": "urban fitters",
+    "name": "urban outfitters",
     "version": "1.0.0",
     "description": "this is my first extension",
     "manifest_version": 2,
@@ -9,10 +9,22 @@
     },
     "content_scripts": [
         {
-            "js": ["content.js"]
-        }
+            "matches": ["https://*.youtube.com/*"],
+            "exclude_matches": ["https://*.youtube.com/watch*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        } 
     ],
     "permissions":[
-        "bookmarks"
-    ]
+        "bookmarks", "storage"
+    ],
+    "icons":{
+        "16": "urban.png",
+        "48": "urban.png",
+        "128": "urban.png"
+    },
+    "browser_action": {
+        "default_title": "created by Don, wazzup!",
+        "default_popup": "popup.html"
+    }
 }
